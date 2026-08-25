@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes — Study Campus</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header compact">
+  <a class="brand" href="/" aria-label="Study Campus home"><img class="brand-logo" src="/assets/study-campus-logo.svg" alt="Study Campus"></a>
+  <nav class="desktop-nav"><a href="/">Home</a><a class="active" href="/notes.html">Notes</a><a href="/subjects.html">Subjects</a><a href="/upload.html">Upload</a><a href="/about.html">About Us</a></nav>
+  <div class="header-actions"><a class="btn btn-primary btn-small" href="/login.html">Login / Sign Up</a><button class="menu-btn" id="menuBtn">☰</button></div>
+</header>
+<main class="page container">
+  <div class="page-heading"><div><span class="eyebrow">LIBRARY</span><h1>Explore Notes</h1><p>Find notes by subject, course or keyword.</p></div><a class="btn btn-primary" href="/upload.html">⇧ Upload Notes</a></div>
+  <div class="filters card">
+    <input id="search" placeholder="Search notes, subjects, topics...">
+    <select id="subject"><option value="">All subjects</option></select>
+    <select id="sort"><option value="latest">Latest</option><option value="popular">Most downloaded</option></select>
+    <button class="btn btn-primary" id="searchBtn">Search</button>
+  </div>
+  <div id="noteGrid" class="note-grid"></div>
+  <div id="empty" class="empty card" hidden><h3>No notes found</h3><p>Try another keyword or check a different subject.</p></div>
+</main>
+<script src="/app.js"></script><script src="/notes.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Upload Notes — Study Campus</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header class="site-header compact"><a class="brand" href="/" aria-label="Study Campus home"><img class="brand-logo" src="/assets/study-campus-logo.svg" alt="Study Campus"></a><nav class="desktop-nav"><a href="/">Home</a><a href="/notes.html">Notes</a><a href="/subjects.html">Subjects</a><a class="active" href="/upload.html">Upload</a><a href="/about.html">About Us</a></nav><div class="header-actions"><a class="btn btn-primary btn-small" href="/login.html">Login / Sign Up</a><button class="menu-btn" id="menuBtn">☰</button></div></header>
+<main class="page container narrow"><div class="page-heading"><div><span class="eyebrow">CONTRIBUTE</span><h1>Upload Notes</h1><p>Share useful notes with fellow students. Every upload is reviewed before it becomes public.</p></div></div>
+<form id="uploadForm" class="card form-card" enctype="multipart/form-data">
+<label>Note title<input name="title" required minlength="3" placeholder="e.g. Engineering Mathematics Unit 1"></label>
+<div class="form-row"><label>Subject<select name="subjectId" id="subjectId" required><option value="">Select subject</option></select></label><label>Course / Branch<input name="course" placeholder="e.g. B.Tech CSE"></label></div>
+<div class="form-row"><label>Semester<input name="semester" placeholder="e.g. 1st Semester"></label><label>File<input type="file" name="file" required accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx,.ppt,.pptx"></label></div>
+<label>Description<textarea name="description" rows="5" placeholder="What does this note contain?"></textarea></label>
+<div class="upload-help">Maximum file size: 15 MB · PDF, images, Word and PowerPoint files supported.</div>
+<button class="btn btn-primary" type="submit">Submit for Review</button><p id="uploadMsg" class="form-msg"></p>
+</form></main>
+<script src="/app.js"></script><script src="/upload.js"></script>
+</body>
+</html>

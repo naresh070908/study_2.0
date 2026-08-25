@@ -1,0 +1,14 @@
+STUDY CAMPUS - START HERE
+
+1. Open this folder in VS Code.
+2. Open Terminal.
+3. Run: npm install
+4. Copy .env.example to .env
+5. Run: npm start
+6. Open http://localhost:3000
+
+Admin:
+Email: admin@studycampus.local
+Password: ChangeMe123!
+
+Change the admin password in .env before publishing.

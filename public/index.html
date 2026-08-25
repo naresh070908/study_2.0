@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Study Campus - notes sharing platform for students.">
+  <title>Study Campus — Notes Sharing Platform</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Study Campus home"><img class="brand-logo" src="/assets/study-campus-logo.svg" alt="Study Campus"></a>
+    <nav class="desktop-nav">
+      <a class="active" href="/">Home</a>
+      <a href="/notes.html">Notes</a>
+      <a href="/subjects.html">Subjects</a>
+      <a href="/upload.html">Upload</a>
+      <a href="/about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <a class="search-mini" href="/notes.html"><span>Search notes, subjects...</span><b>⌕</b></a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+      <a class="btn btn-primary btn-small" href="/login.html">Login / Sign Up</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">MIST STUDENT COMMUNITY</span>
+        <h1>Learn Together.<br>Share Knowledge.<br><span>Grow Every Day.</span></h1>
+        <p>Study Campus is a simple place for students to discover, share and organize useful academic notes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/notes.html">▣ Explore Notes</a>
+          <a class="btn btn-outline" href="/upload.html">⇧ Upload Notes</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Study Campus illustration">
+        <div class="screen-card">
+          <div class="screen-top"><span></span><span></span><span></span></div>
+          <div class="study-panel">
+            <div class="check">✓</div><div><b>Study Smart</b><small>Organize your notes</small></div>
+          </div>
+          <div class="student-shape">
+            <div class="laptop">▱</div>
+            <div class="person">●<br>╱╲</div>
+          </div>
+          <div class="book-stack"><i></i><i></i><i></i></div>
+          <div class="float-card float-one">☁<br><small>Share Notes</small></div>
+          <div class="float-card float-two">✓<br><small>Learn Better</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats container" id="stats">
+      <div><span class="stat-icon">▤</span><strong id="statNotes">0</strong><small>Notes</small></div>
+      <div><span class="stat-icon">●</span><strong id="statStudents">0</strong><small>Students</small></div>
+      <div><span class="stat-icon">▦</span><strong id="statSubjects">0</strong><small>Subjects</small></div>
+      <div><span class="stat-icon">⇧</span><strong id="statUploads">0</strong><small>Uploads Today</small></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading"><div><span class="eyebrow">BROWSE</span><h2>Popular Subjects</h2></div><a href="/subjects.html">View All →</a></div>
+      <div class="subject-grid" id="homeSubjects"></div>
+    </section>
+
+    <section class="why container">
+      <div class="section-heading center"><div><span class="eyebrow">BUILT FOR STUDENTS</span><h2>Why Study Campus?</h2></div></div>
+      <div class="why-grid">
+        <article><div class="feature-icon">✓</div><h3>Quality Notes</h3><p>Useful, organized notes shared by the student community.</p></article>
+        <article><div class="feature-icon">♧</div><h3>Student Community</h3><p>Learn from classmates, seniors and peers in one place.</p></article>
+        <article><div class="feature-icon">⌂</div><h3>Easy to Use</h3><p>Simple navigation designed for quick study sessions.</p></article>
+        <article><div class="feature-icon">♡</div><h3>Free to Start</h3><p>No paid AI dependency in this first version.</p></article>
+      </div>
+      <div class="mist-strip"><strong>Study Campus</strong><span>Made with ♥ by students, for students.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>STUDY CAMPUS</strong><p>Learn together. Share knowledge. Grow every day.</p></div>
+    <div><p>Designed for the MIST student community.</p><small>© <span id="year"></span> Study Campus</small></div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

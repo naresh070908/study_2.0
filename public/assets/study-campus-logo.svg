@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="Study Campus">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1769ff"/>
+      <stop offset="1" stop-color="#18a7e8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 10)">
+    <circle cx="50" cy="50" r="48" fill="#fff" stroke="#dce8f8" stroke-width="3"/>
+    <path d="M17 45 50 24l33 21-33 15z" fill="#10244d"/>
+    <path d="M29 48v18c12 10 30 10 42 0V48L50 59z" fill="url(#b)"/>
+    <path d="M77 46v20c0 5 4 8 8 8" fill="none" stroke="#10244d" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="84" cy="77" r="3.5" fill="#f59e0b"/>
+    <path d="M26 71c8-5 17-5 24 0 8-5 17-5 24 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="120" y="61" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="40" font-weight="800" fill="#17233f">Study</text>
+  <text x="230" y="61" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="40" font-weight="800" fill="#1769ff">Campus</text>
+  <text x="122" y="91" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2.2" fill="#64728a">LEARN • SHARE • GROW</text>
+</svg>

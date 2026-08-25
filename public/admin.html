@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin — Study Campus</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header class="site-header compact"><a class="brand" href="/" aria-label="Study Campus home"><img class="brand-logo" src="/assets/study-campus-logo.svg" alt="Study Campus"></a><div class="header-actions"><a class="btn btn-outline btn-small" href="/">View Site</a><button class="btn btn-primary btn-small" id="logoutBtn">Logout</button></div></header>
+<main class="page container">
+<div class="page-heading"><div><span class="eyebrow">CONTROL CENTER</span><h1>Admin Dashboard</h1><p>Review uploads, monitor reports and keep the notes library healthy.</p></div></div>
+<div class="admin-stats" id="adminStats"></div>
+<div class="admin-tabs"><button class="active" data-status="pending">Pending</button><button data-status="approved">Approved</button><button data-status="rejected">Rejected</button></div>
+<div id="adminNotes" class="admin-list"></div>
+<section class="card report-box"><h2>Reports</h2><div id="reports"></div></section>
+</main>
+<script src="/app.js"></script>
+<script src="/admin.js"></script>
+</body>
+</html>
